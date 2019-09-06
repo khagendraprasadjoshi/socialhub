@@ -1,0 +1,73 @@
+<?php if($_GET["search"]!=null)
+  {
+echo '<h1>Search Results For '; 
+
+    echo '<i>'.$_GET["search"].'</i>'; 
+}
+else
+{
+    echo "Don't Search With Blank Field !!!";
+}?></h1>
+<?php
+
+if($_GET["search"]!=null)
+{
+if($query->rowCount()==0)
+
+{
+    echo '<h3> No Friends Found</h3>';
+}
+else{
+$i = 0;
+for($i=0;$i<=$query->rowCount()-1;$i++)
+{
+ 
+    
+echo '<div class="sects">';
+if($i%2==0)
+{
+for($j=0;$j<1;$j++)
+{
+    $fnames = $row[$i]->{"fname"};
+    $lnames = $row[$i]->{"lname"};
+    $username = $row[$i]->{"username"};
+                echo'<div class="sect 1">
+                    <div class="img_prof"></div>
+                    <span>'.$fnames.' '.$lnames.'</span>
+                    <a href="add_friend.php?friend_username='.$username.'" class="freinds">
+                 
+ADD FRIEND
+                    
+                 </a>
+                </div>';
+                
+} 
+}
+else{
+    for($j=0;$j<1;$j++)
+{
+    $fnames = $row[$i]->{"fname"};
+    $lnames = $row[$i]->{"lname"};
+    $username = $row[$i]->{"username"};
+                echo'<div class="sect 2">
+                    <div class="img_prof"></div>
+                    <span>'.$fnames.' '.$lnames.'</span>
+                    <a href="add_friend.php?friend_username='.$username.'" class="freinds">         
+                      ADD FRIEND </a>
+                </div>';
+                
+} 
+}
+}
+
+
+
+ 
+}
+echo '</div>';
+}
+else
+{
+    
+}
+  ?>

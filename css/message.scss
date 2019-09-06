@@ -1,0 +1,225 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+    .message_section {
+     flex-direction: column;
+ 
+    }  
+}
+    .message_section
+    {
+        margin-top: 20px;
+        width:100%;
+        height:90vh;
+        // height:100vh;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+       justify-content: space-between;
+&>*
+{
+padding:30px;
+
+}
+
+        .message_left
+        {
+
+    width: 30%;
+    background: rgb(241, 242, 243);
+    .msg_sect
+  
+    {display: flex;
+    cursor: pointer;
+        width:100%;
+        i
+        {
+            font-size: 15px;
+        padding-left: 10px;
+        padding-top:5px;
+        }
+        background: rgb(241, 242, 243);
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        color:gray;
+    .msg_bar
+    {
+        // width:100%;
+      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background: rgb(255, 255, 255);
+        h3
+        {
+
+            font-size:18px;
+            font-weight: medium;
+            
+            color:rgba(90, 88, 88, 0.829);
+        }
+        .msg
+        {
+            background:rgba(0, 162, 255, 0.87);
+            // margin-right:30px;
+            display: flex;
+            align-items: center;
+            justify-content:  center;
+            width:60%;
+            border-radius: 100px;
+            padding:10px;
+            flex-direction: column;
+            color:white;
+            &>*
+            {
+                margin:0px;
+            }
+        p
+        {
+            color:rgba(255, 255, 255, 0.801);
+            
+        }
+    }
+}
+    }
+        }
+        .message_right
+        {
+            width: 70%;
+            background: rgb(255, 255, 255);
+            .msg_sect_right
+            {
+                height: 60%;
+                background:rgba(204, 201, 201, 0.274);
+                position: relative;
+                overflow-y: scroll;
+                .message_post
+                {
+
+                    display: flex;
+                    justify-content: center;
+               
+                   position: fixed;
+                   bottom: 0px;
+                   right:20px;
+                   margin-top:50px;
+                   
+                    height:20vh;
+                    box-shadow: 0px 0px 30px rgba(107, 105, 105, 0.452);
+              textarea
+              {
+                  border:none;
+                  outline: none;
+                  width:60%;
+                  padding: 40px;
+                  
+              }
+              button
+              {
+                  padding: 20px;
+                  border:none;
+                  font-size: 20px;
+                  width:40%;
+                  cursor: pointer;
+                  color: white;
+
+                  outline: none;
+                  background: #00A2FF;
+              }
+                }
+                .msg_thread
+                {
+                overflow-y: scroll;
+                margin:20px;
+              ;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+padding: 20px 50px;
+&>*
+
+{
+    margin:20px;
+    padding: 15px;
+   
+    line-height: 25px;
+    font-weight: medium;
+}
+            .message_sent
+            {
+                i
+                {
+                    color:rgb(241, 241, 241);
+                    font-size: 10px;
+                    margin-left:10px;
+                }
+align-self: flex-end;
+color:white;
+max-width: 50%;
+background: #00A2FF;
+word-wrap: wrap;
+
+position: relative;
+&::before
+{
+    position: absolute;
+    content:"";
+    width:10px;
+    height:10px;
+    bottom: -5px;
+    left:-5px;
+   
+    background: #00A2FF;
+
+}
+            }
+            .message_rec
+            {
+                i
+                {
+                    color:rgb(44, 44, 44);
+                    font-size: 10px;
+                    margin-left:10px;
+                }
+                max-width: 50%;
+                word-wrap: wrap;
+align-self: flex-start;
+background: white;
+
+
+position: relative;
+&::before
+{
+    position: absolute;
+    content:"";
+    width:10px;
+    height:10px;
+    bottom: -5px;
+    right:-5px;
+    background: white;
+    
+
+}
+            }
+        }
+            }
+        }
+    }
+    

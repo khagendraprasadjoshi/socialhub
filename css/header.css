@@ -1,0 +1,156 @@
+html, body {
+  font-family: 'Roboto';
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+span.badge {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: smaller;
+  background: white;
+  color: gray;
+}
+
+i.fa.fa-search {
+  color: white;
+}
+
+body {
+  background-image: url(/img/form.jpg);
+  background-size: cover;
+  min-width: 100vw;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo, .profile_pic {
+  background-image: url("http://localhost/fb/img/form.jpg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+header {
+  -webkit-box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
+          box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: #00a2ff;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header ul.right li {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 10px 10px;
+}
+
+header ul.right li:hover {
+  background: rgba(255, 255, 255, 0.274);
+}
+
+header ul.right li:last-child {
+  margin-right: 30px;
+}
+
+header ul li.search {
+  position: absolute;
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li.search form.form input[type="text"] {
+  padding: 6px 15px;
+  width: 450px;
+  outline: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border: 0px;
+}
+
+header ul li.search form.form button.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  outline: none;
+  position: relative;
+  border: none;
+  width: 50px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.39);
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header ul li a > * {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=header.css.map */

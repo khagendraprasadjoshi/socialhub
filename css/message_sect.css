@@ -1,0 +1,242 @@
+.message_sect_part {
+  margin-top: 20px;
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.message_sect_part .left,
+.message_sect_part .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+}
+
+.message_sect_part .left {
+  padding-bottom: 20px;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.322);
+}
+
+.message_sect_part .left h1 {
+  color: #747272;
+}
+
+.message_sect_part .left .msg_sect {
+  overflow-y: scroll;
+}
+
+.message_sect_part .left .msg_sect ::-webkit-scrollbar {
+  color: red;
+  background: #00A2FF;
+}
+
+.message_sect_part .left .msg_sect .msg_feed {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: Flex-start;
+      -ms-flex-pack: Flex-start;
+          justify-content: Flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  width: 90%;
+  padding: 20px;
+  height: 8vh;
+  margin-top: 5px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+}
+
+.message_sect_part .left .msg_sect .msg_feed > *:first-child {
+  margin-left: 0px;
+}
+
+.message_sect_part .left .msg_sect .msg_feed > * {
+  margin-left: 30px;
+}
+
+.message_sect_part .left .msg_sect .msg_feed .user_image {
+  background-image: url("http://localhost/fb/img/form.jpg");
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+}
+
+.message_sect_part .left .msg_sect .msg_feed a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #00A2FF;
+  margin-right: 20px;
+}
+
+.message_sect_part .left .msg_sect .msg_feed a span.badge_dark {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: smaller;
+  background: #00A2FF;
+  color: white;
+}
+
+.message_sect_part .right {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 30px;
+  width: 60%;
+  background: rgba(251, 254, 255, 0.377);
+}
+
+.message_sect_part .right h4 {
+  color: gray;
+}
+
+.message_sect_part .right .msg_sect_right {
+  position: relative;
+  width: 100%;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread {
+  height: 50vh;
+  background-color: rgba(128, 128, 128, 0.315);
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 50px;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread > * {
+  margin: 20px;
+  padding: 15px;
+  line-height: 25px;
+  font-weight: medium;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread .sent {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: white;
+  max-width: 50%;
+  background: #00A2FF;
+  word-wrap: wrap;
+  position: relative;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread .sent i {
+  color: #f1f1f1;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread .sent::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  left: -5px;
+  background: #00A2FF;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread .rec {
+  max-width: 50%;
+  word-wrap: wrap;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background: white;
+  position: relative;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread .rec i {
+  color: #2c2c2c;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.message_sect_part .right .msg_sect_right .msg_thread .rec::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  right: -5px;
+  background: white;
+}
+
+.message_sect_part .right .msg_sect_right .message_post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  min-width: 100%;
+  height: 10vh;
+}
+
+.message_sect_part .right .msg_sect_right .message_post #msg_content {
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 20px 0px 20px 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13) inset;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13) inset;
+}
+
+.message_sect_part .right .msg_sect_right .message_post button {
+  width: 10%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #00A2FF;
+  color: white;
+}
+/*# sourceMappingURL=message_sect.css.map */
