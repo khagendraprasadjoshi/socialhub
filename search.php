@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'db.php';
 
 
 if(!isset($_SESSION["user_name"]))
@@ -7,12 +8,7 @@ if(!isset($_SESSION["user_name"]))
 header("location:login.php");
 }
 $username = $_SESSION["user_name"];
-try{
-$dbconn = new PDO("mysql:host=localhost;dbname=socialhub","root","");
 
-} catch(PDOException $e){
-    echo $e->getMessage();
-}
 if(isset($_GET["search"]))
 {
 $search = $_GET["search"];
@@ -24,7 +20,7 @@ $search = $search.'%';
 $search1 = '%'.$search;
 $user = $_SESSION["user_name"];
 
-$query = $dbconn->query("SELECT * FROM `users` WHERE `fname` LIKE  '$search' AND `username` NOT IN('$user') ");
+$query = $db->query("SELECT * FROM `users` WHERE `fname` LIKE  '$search' AND `username` NOT IN('$user') ");
 
 if($query->rowCount()>0)
 {
@@ -32,7 +28,7 @@ if($query->rowCount()>0)
     // print_r($row);
 }
 //Select Friends Who Accepted Friend Request...
-$query_frnd = $dbconn->query("SELECT * FROM `friends` WHERE `username`='$username' AND accepted='1' ");
+$query_frnd = $db->query("SELECT * FROM `friends` WHERE `username`='$username' AND accepted='1' ");
 $friends_arr = array("");
 
 if($query_frnd->rowCount()>0)
@@ -47,7 +43,7 @@ for($i=0;$i<=$query_frnd->rowCount()-1;$i++)
   
 }
 //Select Friends Who did not Accept Friend Request...
-$query_not_accept= $dbconn->query("SELECT * FROM `friends` WHERE `username`='$username' AND accepted='0' ");
+$query_not_accept= $db->query("SELECT * FROM `friends` WHERE `username`='$username' AND accepted='0' ");
 $friends_arr_not = array("");
 if($query_not_accept->rowCount()>0)
 {

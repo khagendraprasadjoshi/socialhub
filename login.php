@@ -1,16 +1,12 @@
 <?php 
 session_start();
+include 'db.php';
 if(isset($_SESSION["user"]))
 {
   header("location:profile.php");
 }
 else{
-try{
-$db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
 
-} catch(PDOException $e){
-	echo $e->getMessage();
-}
 $error_array = array("");
 
 

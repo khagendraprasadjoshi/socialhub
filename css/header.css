@@ -61,6 +61,8 @@ body {
 header {
   -webkit-box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
           box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 99;
   top: 0;
   left: 0px;
@@ -75,7 +77,7 @@ header {
           align-items: center;
   width: 100vw;
   height: 10vh;
-  /* background: #00a2ff; */
+  background: #00a2ff;
 }
 
 header ul.right li {
@@ -90,10 +92,6 @@ header ul.right li:hover {
 
 header ul.right li:last-child {
   margin-right: 30px;
-}
-
-header ul.left {
-  background-color: red;
 }
 
 header ul.left li.search {
@@ -112,7 +110,6 @@ header ul.left li.search {
 
 header ul.left li.search input[type="text"] {
   padding: 6px 15px;
-  width: 450px;
   outline: none;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;

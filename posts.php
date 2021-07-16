@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+include 'db.php';
+
 if(!isset($_SESSION["user_name"]))
 {
 header("location:login.php");
@@ -8,12 +10,7 @@ header("location:login.php");
 // $username = "";
 $username = $_SESSION["user_name"];
 
-try{
-$db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
 
-} catch(PDOException $e){
-    echo $e->getMessage();
-}
 if(isset($_REQUEST["user"]) && isset($_REQUEST["page"]))
 {
 $user_get = $_REQUEST["user"];

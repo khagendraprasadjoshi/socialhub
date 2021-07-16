@@ -1,10 +1,6 @@
 <?php
-try{
-    $db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
-    
-    } catch(PDOException $e){
-        echo $e->getMessage();
-    }
+include 'db.php';
+
 $query1 = $db->prepare("SELECT * FROM `posts`");
 $query1->execute();
 if($query1->rowCount()>0){
