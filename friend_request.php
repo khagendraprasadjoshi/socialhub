@@ -94,7 +94,7 @@ function timedef($date)
     <title>Profile</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/profile.css">
-    <script src="http://localhost/fb/js/jquery.js"></script>
+    <script src="http://localhost/socialhub/js/jquery.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>

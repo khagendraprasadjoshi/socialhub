@@ -1,3 +1,9 @@
+@media (min-width: 600px) {
+  ul.right {
+    display: none;
+  }
+}
+
 html, body {
   font-family: 'Roboto';
   padding: 0px;
@@ -23,7 +29,7 @@ span.badge {
           justify-content: center;
   font-size: smaller;
   background: white;
-  color: gray;
+  color: #0d91fd;
 }
 
 i.fa.fa-search {
@@ -45,7 +51,7 @@ body {
 }
 
 .logo, .profile_pic {
-  background-image: url("http://localhost/fb/img/form.jpg");
+  background-image: url("http://localhost/socialhub/img/form.jpg");
   background-size: cover;
   width: 40px;
   height: 40px;
@@ -55,8 +61,6 @@ body {
 header {
   -webkit-box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
           box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
-  position: -webkit-sticky;
-  position: sticky;
   z-index: 99;
   top: 0;
   left: 0px;
@@ -71,17 +75,7 @@ header {
           align-items: center;
   width: 100vw;
   height: 10vh;
-  background: #00a2ff;
-}
-
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
+  /* background: #00a2ff; */
 }
 
 header ul.right li {
@@ -98,15 +92,25 @@ header ul.right li:last-child {
   margin-right: 30px;
 }
 
-header ul li.search {
+header ul.left {
+  background-color: red;
+}
+
+header ul.left li.search {
   position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header ul li.search form.form input[type="text"] {
+header ul.left li.search input[type="text"] {
   padding: 6px 15px;
   width: 450px;
   outline: none;
@@ -115,28 +119,7 @@ header ul li.search form.form input[type="text"] {
   border: 0px;
 }
 
-header ul li.search form.form button.search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  outline: none;
-  position: relative;
-  border: none;
-  width: 50px;
-  left: 0px;
-  background: rgba(255, 255, 255, 0.39);
-}
-
-header ul li a {
+header ul.left li a {
   text-decoration: none;
   color: white;
   -webkit-box-align: center;
@@ -148,9 +131,10 @@ header ul li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  cursor: pointer;
 }
 
-header ul li a > * {
+header ul.left li a > * {
   margin-left: 5px;
 }
 /*# sourceMappingURL=header.css.map */

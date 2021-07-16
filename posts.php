@@ -9,7 +9,7 @@ header("location:login.php");
 $username = $_SESSION["user_name"];
 
 try{
-$db = new PDO("mysql:host=localhost;dbname=fb","root","");
+$db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
 
 } catch(PDOException $e){
     echo $e->getMessage();
@@ -26,7 +26,7 @@ function post_display($user,$page)
    
     $username = $_SESSION["user_name"];
     try{
-    $db = new PDO("mysql:host=localhost;dbname=fb","root","");
+    $db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
     
     } catch(PDOException $e){
         echo $e->getMessage();
@@ -133,6 +133,13 @@ $k = 0;
         $post_id = $row2[$i]->{"post_id"};
         $caption = $row2[$i]->{"caption"};
         $usr = $row2[$i]->{"username"};
+        $options = '';
+         if($usr==$username)
+        {
+            $options =  '<a href="delete_post.php?post_id='.$post_id.'&page='.$page.'" class="options"> <div class="dot"></div></a>';
+        
+        }
+        
     $post = '<div class="post">
     <div class="post_header">
         <div class="post_header_left">
@@ -146,14 +153,8 @@ $k = 0;
     
         </div>
         <div class="post_header_right">
-        <a href="delete_post.php?post_id='.$post_id.'&page='.$page.'"> <div class="dot"></div></a>
-        
-
-        
-            
-    
-    
-       </div>
+            '.$options.'
+        </div>
     
     </div>
     
@@ -166,7 +167,7 @@ $k = 0;
         if($img!="")
         {
         echo '<div class="post_pic">
-        <img src="http://localhost/fb/'.$row2[$i]->{"post_img"}.
+        <img src="http://localhost/socialhub/'.$row2[$i]->{"post_img"}.
         '">
         </div>';
         }

@@ -1,6 +1,6 @@
 <?php
 try{
-    $dbconn = new PDO("mysql:host=localhost;dbname=fb","root","");
+    $dbconn = new PDO("mysql:host=localhost;dbname=socialhub","root","");
     
     } catch(PDOException $e){
         echo $e->getMessage();
@@ -76,7 +76,7 @@ if($Query){
   array_push($error_array,"Registered Successfully") ;
   $_SESSION["user"]=$fname;
   $_SESSION["user_name"]=$username;
- header("location:fb/profile.php");
+ header("location:socialhub/profile.php");
 } 
 else{
   array_push($error_array,"Error in Creating Account") ;

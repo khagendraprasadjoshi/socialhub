@@ -1,12 +1,21 @@
 <?php
+try{
 
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+    $db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
+    if(isset($_SESSION["user_name"]))
+    {
+    $username = $_SESSION["user_name"];
+    }
+    } catch(PDOException $e){
+        echo $e->getMessage();
+    }
+// $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+// $cleardb_server = $cleardb_url["host"];
+// $cleardb_username = $cleardb_url["user"];
+// $cleardb_password = $cleardb_url["pass"];
+// $cleardb_db = substr($cleardb_url["path"],1);
+// $active_group = 'default';
+// $query_builder = TRUE;
+// // Connect to DB
+// $db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>

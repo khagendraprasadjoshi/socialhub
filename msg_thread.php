@@ -112,7 +112,7 @@ var user = "'.$username.'";
            
 
    </script>
-   <script src="http://localhost/fb/js/jquery.js"></script>
+   <script src="http://localhost/socialhub/js/jquery.js"></script>
 </body>
 
 </html>';

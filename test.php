@@ -22,7 +22,7 @@
 
 <body>
   
-<script src="http://localhost/fb/js/jquery.js"></script>
+<script src="http://localhost/socialhub/js/jquery.js"></script>
 <header>
         <ul>
            <a href="profile.php"> <div class="logo">
@@ -59,7 +59,7 @@
    
     <section class="main">
     <div class="search_section">
-  <img class="loading" src="http://localhost/fb/img/loading.gif"/>
+  <img class="loading" src="http://localhost/socialhub/img/loading.gif"/>
 </div>
     </section>
     <script>

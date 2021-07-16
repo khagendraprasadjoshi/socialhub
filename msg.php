@@ -14,8 +14,9 @@ for($i = 0;$i<=$count-1;$i++)
 
 $start_date = new DateTime($msg_row[$i]->{"date"});
 
-
-$time_message = "9:30 PM";
+// $format = 'd-m-Y H:i:s A';
+// $date = DateTime::createFromFormat($format, $start_date);
+$time_message = $start_date->format('H:i A');
 
 
 if($msg_user===$username)

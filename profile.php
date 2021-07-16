@@ -40,7 +40,7 @@ include 'header.php';
             </div>
             
             <div class="posts_list">
-<img class="loading" src="http://localhost/fb/img/loading.gif"/>
+<img class="loading" src="http://localhost/socialhub/img/loading.gif"/>
 
 <div class="end">
     </div>

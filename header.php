@@ -1,8 +1,8 @@
 
 
-<script src="http://localhost/fb/js/jquery.js"></script>
+<script src="http://localhost/socialhub/js/jquery.js"></script>
 <header>
-        <ul>
+        <ul class="left">
            <a href="profile.php"> <div class="logo">
 
             </div></a>

@@ -73,7 +73,7 @@ section.main {
 }
 
 .sect_left .req_bar .img_circle, .sect_right .req_bar .img_circle {
-  background-image: url("http://localhost/fb/img/form.jpg");
+  background-image: url("http://localhost/socialhub/img/form.jpg");
   background-size: cover;
   width: 6vh;
   cursor: pointer;
@@ -154,7 +154,7 @@ section.main {
 }
 
 .search_section .sects .sect .img_prof {
-  background-image: url("http://localhost/fb/img/form.jpg");
+  background-image: url("http://localhost/socialhub/img/form.jpg");
   background-size: cover;
   width: 6vh;
   cursor: pointer;
@@ -373,7 +373,7 @@ section.main {
 
 .post-section .post-upload .profile_pic_large {
   margin: auto 20px;
-  background-image: url("http://localhost/fb/img/form.jpg");
+  background-image: url("http://localhost/socialhub/img/form.jpg");
   background-size: cover;
   width: 90px;
   height: 80px;

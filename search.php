@@ -8,7 +8,7 @@ header("location:login.php");
 }
 $username = $_SESSION["user_name"];
 try{
-$dbconn = new PDO("mysql:host=localhost;dbname=fb","root","");
+$dbconn = new PDO("mysql:host=localhost;dbname=socialhub","root","");
 
 } catch(PDOException $e){
     echo $e->getMessage();
@@ -110,7 +110,7 @@ else{
 }
 ?>
 
-<script src="http://localhost/fb/js/jquery.js"></script>
+<script src="http://localhost/socialhub/js/jquery.js"></script>
 <?php
 include 'header.php' ?>
 

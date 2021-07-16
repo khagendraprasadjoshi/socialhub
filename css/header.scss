@@ -13,6 +13,7 @@ html,body
     box-sizing: border-box;
 }
 
+$blue-button:rgb(13, 145, 253);
 
 span.badge
 {
@@ -30,7 +31,6 @@ span.badge
     color:$blue-button;
 }
 $color-primary:rgb(241, 240, 240);
-$blue-button:rgb(13, 145, 253);
 $blue-light-button:rgba(13, 145, 253, 0.719);
 i.fa.fa-search
 {
@@ -49,7 +49,7 @@ body{
 
 .logo,.profile_pic
 {
-    background-image: url('http://localhost/fb/img/form.jpg');
+    background-image: url('http://localhost/socialhub/img/form.jpg');
     background-size: cover;
     width:40px;
     height: 40px;
@@ -57,8 +57,9 @@ body{
 }
 header
 {
+
     box-shadow: 0px 0px 6px rgba(107, 105, 105, 0.452);
-    position: sticky;
+    // position: sticky;
     z-index: 99;
 
     // right: 0;
@@ -96,14 +97,18 @@ padding: 10px 10px;
 //    
         }
         }
-        display: flex;
-        align-items: center;
+       
+        // display: flex;
+        // align-items: center;
      
 
 
-        list-style: none;
+        // list-style: none;
+         &.left{
+             background-color: red;
         li
         {
+
 
             &.search
             {
@@ -141,8 +146,10 @@ border: 0px;
                 {
                     margin-left:5px;
                 }
+                cursor: pointer;
         
             }
         }
+    }
     }
 }

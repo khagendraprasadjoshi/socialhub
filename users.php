@@ -1,6 +1,6 @@
 <?php
 try{
-    $db = new PDO("mysql:host=localhost;dbname=fb","root","");
+    $db = new PDO("mysql:host=localhost;dbname=socialhub","root","");
     
     } catch(PDOException $e){
         echo $e->getMessage();

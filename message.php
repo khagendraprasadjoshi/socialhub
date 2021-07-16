@@ -14,9 +14,9 @@ $username;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
-    <link rel="stylesheet" href="http://localhost/fb/css/message_sect.css">
-    <link rel="stylesheet" href="http://localhost/fb/css/header.css">
-    <link rel="stylesheet" href="http://localhost/fb/css/profile.css">
+    <link rel="stylesheet" href="http://localhost/socialhub/css/message_sect.css">
+    <link rel="stylesheet" href="http://localhost/socialhub/css/header.css">
+    <link rel="stylesheet" href="http://localhost/socialhub/css/profile.css">
     <style>
         body {
             background: rgba(209, 204, 204, 0.281) !important;

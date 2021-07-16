@@ -79,7 +79,7 @@
 }
 
 .message_sect_part .left .msg_sect .msg_feed .user_image {
-  background-image: url("http://localhost/fb/img/form.jpg");
+  background-image: url("http://localhost/socialhub/img/form.jpg");
   background-size: cover;
   width: 60px;
   height: 60px;
