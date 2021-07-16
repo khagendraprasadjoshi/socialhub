@@ -39,7 +39,7 @@ $user_name = $user_row[0]->{"fname"}.' '.$user_row[0]->{"lname"};
 echo $user_name;?></h4>
    <div class="msg_sect_right">
    <div class="msg_thread">
-  ';
+
 
 
        
