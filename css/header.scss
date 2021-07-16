@@ -74,6 +74,12 @@ align-items: center;
     background: rgb(0, 162, 255);
     ul
     {
+            display: flex;
+        align-items: center;
+     
+
+
+        list-style: none;
         &.right
         {
             // margin-left: 500px;
@@ -98,12 +104,7 @@ padding: 10px 10px;
         }
         }
        
-        // display: flex;
-        // align-items: center;
-     
-
-
-        // list-style: none;
+    
          &.left{
             //  background-color: red;
         li

@@ -80,6 +80,16 @@ header {
   background: #00a2ff;
 }
 
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
 header ul.right li {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
