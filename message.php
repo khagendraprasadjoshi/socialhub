@@ -43,7 +43,7 @@ echo $user_name;?></h4>
 
 
        
-echo'
+
 </div>
 <div class="message_post">
    <textarea  id="msg_content" cols="30" rows="10" placeholder="Enter a message..."></textarea>
